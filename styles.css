@@ -26,27 +26,53 @@ body {
     transition: bottom 1s ease; /* Transition for moving up */
     cursor: pointer;
 }
+#star-container {
+    position: absolute;
+    top: 220px;
+    left: 200px;
+  }
+  #star-container1 {
+    position: absolute;
+    top: 140px;
+    left: 990px;
+  }  
+  #star-container2 {
+    position: absolute;
+    top: 570px;
+    left: 850px;
+  }
+  #star-container3 {
+    position: absolute;
+    top: 480px;
+    left: 400px;
+  }
+  #star-container4 {
+    position: absolute;
+    top: 80px;
+    left: 520px;
+  }
   /* Container for the cloud */
   #cloud-container {
     position: absolute;
-    top: 50%; /* Adjust to move the cloud vertically */
+    top: 70%; /* Adjust to move the cloud vertically */
     transform: translateY(-50%); /* Centers the cloud vertically */
-    animation: moveCloud 14s linear infinite; /* Animation to move the cloud */
+    animation: moveCloud 17s linear infinite; /* Animation to move the cloud */
   }
   
   #cloud-container1 {
     position: absolute;
-    top: 30%; /* Adjust to move the cloud vertically */
-    transform: translateY(-50%);
-    transform: translateX(-50%); /* Centers the cloud vertically */
-    animation: moveCloud 19s linear infinite; /* Animation to move the cloud */
+    top: 20%; /* Adjust to move the cloud vertically */
+    transform: translateY(-20%);
+    transform: translateX(-10%); /* Centers the cloud vertically */
+    animation: moveCloud 14s linear infinite; /* Animation to move the cloud */
   }
   #cloud-container2 {
     position: absolute;
-    top: 50%; /* Adjust to move the cloud vertically */
+    top: 55%; /* Adjust to move the cloud vertically */
     transform: translateY(-70%); /* Centers the cloud vertically */
-    animation: moveCloud 17s linear infinite; /* Animation to move the cloud */
+    animation: moveCloud 19s linear infinite; /* Animation to move the cloud */
   }
+  
   /* Animation for moving the cloud */
   @keyframes moveCloud {
     0% {

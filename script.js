@@ -3,6 +3,7 @@ const sunContainer = document.getElementById('sun-container');
 const moonContainer = document.getElementById('moon-container');
 const body = document.body;  // Reference to the body element
 const clouds = document.querySelectorAll('#cloud-container svg, #cloud-container1 svg, #cloud-container2 svg');
+const stars = document.querySelectorAll('#star-container svg, #star-container1 svg, #star-container2 svg, #star-container3 svg, #star-container4 svg');
 
 // Toggle between sun and moon on click
 sunContainer.addEventListener('click', () => {
@@ -20,6 +21,11 @@ sunContainer.addEventListener('click', () => {
                 circle.setAttribute('fill', '#c9c9c9');  // Darker clouds color
             });
         });
+        stars.forEach(star => {
+            star.querySelectorAll('rect').forEach(rect => {
+                rect.setAttribute('fill', 'white');  // Darker clouds color
+            });
+        });
 });
 
 moonContainer.addEventListener('click', () => {
@@ -34,6 +40,11 @@ moonContainer.addEventListener('click', () => {
     clouds.forEach(cloud => {
         cloud.querySelectorAll('circle').forEach(circle => {
             circle.setAttribute('fill', '#f2f2f2');  // Darker clouds color
+        });
+    });
+    stars.forEach(star => {
+        star.querySelectorAll('rect').forEach(rect => {
+            rect.setAttribute('fill', 'skyblue');  // Darker clouds color
         });
     });
 });
