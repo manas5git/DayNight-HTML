@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG in the Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sun-container">
+        <svg id="svgSun" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="80" fill="yellow" />
+        </svg>
+    </div>
+
+        <!-- Moon container (initially hidden off-screen) -->
+        <div id="moon-container">
+            <svg id="svgMoon" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="150" cy="100" r="70" fill="#f2F2f2" />
+                <circle cx="140" cy="135" r="16" fill="#ebebeb" />
+                <circle cx="190" cy="100" r="10" fill="#ebebeb" />
+                <circle cx="115" cy="80" r="13" fill="#ebebeb" />
+                <circle cx="165" cy="60" r="8" fill="#ebebeb" />
+            </svg>
+        </div>
+
+    <div id="cloud-container">
+        <svg id="svgCloud" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="250" cy="250" r="65" fill="#f2f2f2" />
+            <circle cx="190" cy="267" r="50" fill="#f2f2f2" />
+            <circle cx="310" cy="270" r="40" fill="#f2f2f2" />
+        </svg>
+    </div>
+    <div id="cloud-container1">
+        <svg id="svgCloud" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="350" cy="350" r="65" fill="#f2f2f2" />
+            <circle cx="290" cy="367" r="50" fill="#f2f2f2" />
+            <circle cx="410" cy="370" r="40" fill="#f2f2f2" />
+        </svg>
+    </div>
+    <div id="cloud-container2">
+        <svg id="svgCloud" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="150" cy="150" r="65" fill="#f2f2f2" />
+            <circle cx="90" cy="167" r="50" fill="#f2f2f2" />
+            <circle cx="210" cy="170" r="40" fill="#f2f2f2" />
+        </svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

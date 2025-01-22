@@ -1,0 +1,59 @@
+/* Styles for the body to center content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: skyblue; /* Optional background color */
+    overflow: hidden; /* Ensure the cloud doesn't leave a scrollbar when moving */
+    transition: background-color 1s ease; /* Add smooth transition for background color */
+  }
+  
+
+/* Container for the sun to keep its position intact */
+#sun-container {
+    position: absolute;
+    top: 200px;
+    cursor: pointer;
+    transition: top 1s ease; /* Add a smooth transition for moving the sun */
+}
+
+/* Moon container initially hidden off-screen */
+#moon-container {
+    position: absolute;
+    bottom: -250px; /* Initially position it off-screen at the bottom */
+    transition: bottom 1s ease; /* Transition for moving up */
+    cursor: pointer;
+}
+  /* Container for the cloud */
+  #cloud-container {
+    position: absolute;
+    top: 50%; /* Adjust to move the cloud vertically */
+    transform: translateY(-50%); /* Centers the cloud vertically */
+    animation: moveCloud 14s linear infinite; /* Animation to move the cloud */
+  }
+  
+  #cloud-container1 {
+    position: absolute;
+    top: 30%; /* Adjust to move the cloud vertically */
+    transform: translateY(-50%);
+    transform: translateX(-50%); /* Centers the cloud vertically */
+    animation: moveCloud 19s linear infinite; /* Animation to move the cloud */
+  }
+  #cloud-container2 {
+    position: absolute;
+    top: 50%; /* Adjust to move the cloud vertically */
+    transform: translateY(-70%); /* Centers the cloud vertically */
+    animation: moveCloud 17s linear infinite; /* Animation to move the cloud */
+  }
+  /* Animation for moving the cloud */
+  @keyframes moveCloud {
+    0% {
+      left: -500px; /* Start the cloud off-screen on the left */
+    }
+    100% {
+      left: 100%; /* Move the cloud to the right, beyond the screen */
+    }
+  }
+  
